@@ -78,6 +78,14 @@ flutter {
 }
 
 dependencies {
-    // Fix for Play Core missing classes
-    implementation("com.google.android.play:core:1.10.3")
+    // Modern Play libraries compatible with SDK 34+
+    // These replace the deprecated com.google.android.play:core library
+    implementation("com.google.android.play:app-update:2.1.0")
+    implementation("com.google.android.play:app-update-ktx:2.1.0")
+    implementation("com.google.android.play:review:2.0.2")
+    implementation("com.google.android.play:review-ktx:2.0.2")
+    implementation("com.google.android.play:feature-delivery:2.1.0")
+    implementation("com.google.android.play:feature-delivery-ktx:2.1.0")
+    implementation("com.google.android.play:asset-delivery:2.2.2")
+    implementation("com.google.android.play:asset-delivery-ktx:2.2.2")
 }

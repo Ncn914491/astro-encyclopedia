@@ -30,3 +30,8 @@
 
 # Cached Network Image
 -keep class com.github.bumptech.glide.** { *; }
+
+# Google Play Core - Ignore missing legacy classes
+# We don't use deferred components, so these are safe to ignore
+-dontwarn com.google.android.play.core.**
+-dontwarn io.flutter.embedding.engine.deferredcomponents.**

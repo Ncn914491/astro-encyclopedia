@@ -1,0 +1,12 @@
+{
+  "id": "sombrero-galaxy",
+  "title": "The Sombrero Galaxy Split Personality",
+  "description": "This infrared vision of NASA Spitzer Space Telescope has revealed that the Sombrero galaxy, named after its appearance in visible light to a wide-brimmed hat, is in fact two galaxies in one.",
+  "imageUrl": "https://backend-proxy.astro-encyclopedia.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA15426%2FPIA15426~medium.jpg",
+  "type": "galaxy",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown"
+  },
+  "source": "NASA"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "earth",
+  "title": "The Earth & Moon",
+  "description": "During its flight, NASA’s Galileo spacecraft returned images of the Earth and Moon. Separate images of the Earth and Moon were combined to generate this view.  http://photojournal.jpl.nasa.gov/catalog/PIA00342",
+  "imageUrl": "https://backend-proxy.astro-encyclopedia.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA00342%2FPIA00342~medium.jpg",
+  "type": "other",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown"
+  },
+  "source": "NASA"
+}

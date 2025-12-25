@@ -1,0 +1,23 @@
+# ===========================================
+# Astro Encyclopedia - Key Properties Template
+# ===========================================
+# 
+# INSTRUCTIONS:
+# 1. Copy this file and rename it to 'key.properties'
+# 2. Fill in your actual passwords below
+# 3. The key.properties file is already in .gitignore (safe)
+#
+# SECURITY WARNING: NEVER commit credentials to version control!
+# ===========================================
+
+# Keystore password (the password you set when creating the keystore)
+storePassword=YOUR_KEYSTORE_PASSWORD_HERE
+
+# Key password (the password for the specific key alias)
+keyPassword=YOUR_KEY_PASSWORD_HERE
+
+# Key alias (must match what you used in keytool command)
+keyAlias=astro-upload-key
+
+# Path to the keystore file (relative to android/app/)
+storeFile=upload-keystore.jks

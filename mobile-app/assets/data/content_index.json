@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sun",
+    "title": "Sun Shines in High-Energy X-rays",
+    "type": "star",
+    "path": "tier_a/sun.json"
+  },
+  {
+    "id": "moon",
+    "title": "Nearside of the Moon",
+    "type": "other",
+    "path": "tier_a/moon.json"
+  },
+  {
+    "id": "mercury",
+    "title": "Mercury, Mercury! ",
+    "type": "other",
+    "path": "tier_a/mercury.json"
+  },
+  {
+    "id": "venus",
+    "title": "Surface Warmth on a Venus Volcano",
+    "type": "other",
+    "path": "tier_a/venus.json"
+  },
+  {
+    "id": "earth",
+    "title": "The Earth & Moon",
+    "type": "other",
+    "path": "tier_a/earth.json"
+  },
+  {
+    "id": "mars",
+    "title": "Mars Celebration",
+    "type": "other",
+    "path": "tier_a/mars.json"
+  },
+  {
+    "id": "jupiter",
+    "title": "Jupiter Plume",
+    "type": "other",
+    "path": "tier_a/jupiter.json"
+  },
+  {
+    "id": "saturn",
+    "title": "Saturn Atmosphere",
+    "type": "other",
+    "path": "tier_a/saturn.json"
+  },
+  {
+    "id": "uranus",
+    "title": "GIF of Uranus' Magnetic Field",
+    "type": "other",
+    "path": "tier_a/uranus.json"
+  },
+  {
+    "id": "neptune",
+    "title": "Neptune Rings",
+    "type": "other",
+    "path": "tier_a/neptune.json"
+  },
+  {
+    "id": "pluto",
+    "title": "A Moon over Pluto Animation",
+    "type": "other",
+    "path": "tier_a/pluto.json"
+  },
+  {
+    "id": "andromeda-galaxy",
+    "title": "Andromeda Galaxy",
+    "type": "galaxy",
+    "path": "tier_a/andromeda-galaxy.json"
+  },
+  {
+    "id": "orion-nebula",
+    "title": "Orion Nebula and Bow Shock",
+    "type": "nebula",
+    "path": "tier_a/orion-nebula.json"
+  },
+  {
+    "id": "black-hole",
+    "title": "Behemoth Black Hole Found in an Unlikely Place",
+    "type": "other",
+    "path": "tier_a/black-hole.json"
+  },
+  {
+    "id": "international-space-station",
+    "title": "International Space Station mockup training",
+    "type": "other",
+    "path": "tier_a/international-space-station.json"
+  },
+  {
+    "id": "hubble-space-telescope",
+    "title": "Saturn from Far and Near Hubble Space Telescope",
+    "type": "other",
+    "path": "tier_a/hubble-space-telescope.json"
+  },
+  {
+    "id": "milky-way",
+    "title": "Milky Way Untangled",
+    "type": "other",
+    "path": "tier_a/milky-way.json"
+  },
+  {
+    "id": "pillars-of-creation",
+    "title": "Pillars of Creation Revealed in 3-D",
+    "type": "other",
+    "path": "tier_a/pillars-of-creation.json"
+  },
+  {
+    "id": "crab-nebula",
+    "title": "Most Detailed Image of the Crab Nebula",
+    "type": "nebula",
+    "path": "tier_a/crab-nebula.json"
+  },
+  {
+    "id": "sombrero-galaxy",
+    "title": "The Sombrero Galaxy Split Personality",
+    "type": "galaxy",
+    "path": "tier_a/sombrero-galaxy.json"
+  }
+]

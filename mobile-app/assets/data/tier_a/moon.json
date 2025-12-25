@@ -1,0 +1,12 @@
+{
+  "id": "moon",
+  "title": "Nearside of the Moon",
+  "description": "Nearside of the Moon",
+  "imageUrl": "https://backend-proxy.astro-encyclopedia.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA12235%2FPIA12235~medium.jpg",
+  "type": "other",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown"
+  },
+  "source": "NASA"
+}

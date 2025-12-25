@@ -1,0 +1,12 @@
+{
+  "id": "orion-nebula",
+  "title": "Orion Nebula and Bow Shock",
+  "description": "Astronomers using NASA Hubble Space Telescope have found a bow shock around a very young star in the nearby Orion nebula, an intense star-forming region of gas and dust. ",
+  "imageUrl": "https://backend-proxy.astro-encyclopedia.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA04227%2FPIA04227~small.jpg",
+  "type": "nebula",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown"
+  },
+  "source": "NASA"
+}

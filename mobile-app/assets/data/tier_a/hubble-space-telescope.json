@@ -1,0 +1,12 @@
+{
+  "id": "hubble-space-telescope",
+  "title": "Saturn from Far and Near Hubble Space Telescope",
+  "description": "Saturn from Far and Near Hubble Space Telescope",
+  "imageUrl": "https://backend-proxy.astro-encyclopedia.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA05982%2FPIA05982~medium.jpg",
+  "type": "other",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown"
+  },
+  "source": "NASA"
+}

@@ -43,3 +43,19 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# ===========================================
+# Android Signing - SECURITY CRITICAL
+# ===========================================
+# Never commit keystores or signing credentials!
+*.jks
+*.keystore
+**/key.properties
+**/local.properties
+
+# Secrets
+*.pem
+*.p12
+*.key
+secrets/
+credentials/

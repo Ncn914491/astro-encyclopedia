@@ -1,32 +1,73 @@
 # Astro Encyclopedia
 
+A production-grade Astronomy Encyclopedia with offline-first architecture.
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      Flutter Mobile App                      │
+├─────────────────────────────────────────────────────────────┤
+│  1. LOCAL BUNDLE (assets/offline/)  ──► Fastest, in APK     │
+│  2. CLOUDFLARE WORKER               ──► Dynamic search/APOD │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Key Rule**: The app NEVER talks to `api.nasa.gov`. All NASA data flows through the Cloudflare Worker.
+
 ## Project Structure
-*   **`backend-proxy/`**: Cloudflare Worker code (Dynamic API & Image Proxy).
-*   **`data/`**: Static "Tier-A" JSON data (hosted on Pages).
-*   **`mobile-app/`**: Flutter application.
-*   **`docs/`**: Documentation & Architecture rules.
 
-## Deployment Instructions
+```
+astro-encyclopedia/
+├── backend-proxy/     # Cloudflare Worker (Dynamic API)
+├── mobile-app/        # Flutter Application
+├── data/              # Static JSON (bundled in APK + GitHub Pages backup)
+├── scripts/           # Data generation scripts
+└── docs/              # Architecture documentation
+```
 
-### 1. Backend Worker (Dynamic)
-*   **Project Name**: `backend-proxy` (or `astro-worker`)
-*   **Type**: Cloudflare Worker
-*   **Settings**:
-    *   **Root Directory**: `backend-proxy` (Crucial!)
-    *   **Build System Version**: 2
-*   **Environment Variables**:
-    *   `NASA_API_KEY`: [Your Key]
-    *   `NASA_IMAGE_API_URL`: `https://images-api.nasa.gov`
+## Deployment
 
-### 2. Static Data (Pages)
-*   **Project Name**: `astro-data`
-*   **Type**: Cloudflare Pages
-*   **Settings**:
-    *   **Build Command**: `bash build.sh`
-    *   **Build Output Directory**: `dist`
-    *   **Root Directory**: `/` (Leave empty)
+### 1. Cloudflare Worker (Required)
+
+```bash
+cd backend-proxy
+npm install
+npx wrangler login
+npx wrangler deploy
+```
+
+**Dashboard Settings** (if using Git integration):
+- **Root Directory**: `backend-proxy`
+
+### 2. GitHub Pages (Optional Remote Fallback)
+
+The workflow `.github/workflows/deploy_data.yml` automatically deploys the `data/` folder to GitHub Pages on push.
+
+**Enable it**:
+1. Go to your repo **Settings** > **Pages**.
+2. Set **Source** to **GitHub Actions**.
+
+Result: `https://<username>.github.io/astro-encyclopedia/tier_a/sun.json`
+
+### 3. Flutter App
+
+Static data is already bundled in `mobile-app/assets/offline/`. Just build normally:
+
+```bash
+cd mobile-app
+flutter build apk
+```
 
 ## Local Development
-1.  **Seed Data**: `node scripts/seed_database.js`
-2.  **Run Worker**: `cd backend-proxy && npm start`
-3.  **Run App**: `cd mobile-app && flutter run`
+
+```bash
+# Seed Tier-A data and images
+node scripts/seed_database.js
+
+# Run Worker locally
+cd backend-proxy && npm start
+
+# Run Flutter app
+cd mobile-app && flutter run
+```

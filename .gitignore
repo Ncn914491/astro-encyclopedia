@@ -1,0 +1,32 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OS
+.DS_Store
+
+# Ignore generated cloudflare worker types if any (usually in node_modules or dist)
+backend-proxy/dist/
+backend-proxy/worker/
+
+# We explicitly WANT to commit the data/ folder so it deploys to Pages
+!data/

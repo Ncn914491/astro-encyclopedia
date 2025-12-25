@@ -1,0 +1,12 @@
+{
+  "id": "milky-way",
+  "title": "Milky Way Untangled",
+  "description": "A new, dynamic portrait of our Milky Way galaxy shows a frenzy of gas, charged particles and dust as seen by the European Space Agency Planck mission.",
+  "imageUrl": "https://backend-proxy.astro-encyclopedia.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA18913%2FPIA18913~medium.jpg",
+  "type": "other",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown"
+  },
+  "source": "NASA"
+}

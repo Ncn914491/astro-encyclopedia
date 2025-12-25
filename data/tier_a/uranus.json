@@ -1,0 +1,12 @@
+{
+  "id": "uranus",
+  "title": "GIF of Uranus' Magnetic Field",
+  "description": "An animated GIF showing Uranus' magnetic field. The yellow arrow points to the Sun, the light blue arrow marks Uranus' magnetic axis, and the dark blue arrow marks Uranus' rotation axis.  Animation available at https://photojournal.jpl.nasa.gov/catalog/PIA23683",
+  "imageUrl": "https://backend-proxy.astro-encyclopedia.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA23683%2FPIA23683~thumb.jpg",
+  "type": "other",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown"
+  },
+  "source": "NASA"
+}

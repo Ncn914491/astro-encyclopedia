@@ -1,0 +1,149 @@
+[
+  {
+    "id": "mercury",
+    "title": "Long Scarps on Mercury Tell of the Planet Unique History",
+    "type": "planet",
+    "thumbnailPath": "assets/images/mercury.jpg",
+    "path": "objects/mercury.json"
+  },
+  {
+    "id": "venus",
+    "title": "Launch Vehicles",
+    "type": "planet",
+    "thumbnailPath": "assets/images/venus.jpg",
+    "path": "objects/venus.json"
+  },
+  {
+    "id": "earth",
+    "title": "View of Skylab space station cluster in Earth orbit from CSM",
+    "type": "planet",
+    "thumbnailPath": "assets/images/earth.jpg",
+    "path": "objects/earth.json"
+  },
+  {
+    "id": "mars",
+    "title": "Mars Perseverance Rover (Gradient Illustration)",
+    "type": "planet",
+    "thumbnailPath": "assets/images/mars.jpg",
+    "path": "objects/mars.json"
+  },
+  {
+    "id": "jupiter",
+    "title": "Launch Vehicles",
+    "type": "planet",
+    "thumbnailPath": "assets/images/jupiter.jpg",
+    "path": "objects/jupiter.json"
+  },
+  {
+    "id": "saturn",
+    "title": "Saturn Rings",
+    "type": "planet",
+    "thumbnailPath": "assets/images/saturn.jpg",
+    "path": "objects/saturn.json"
+  },
+  {
+    "id": "uranus",
+    "title": "Hubble Observes the Planet Uranus",
+    "type": "planet",
+    "thumbnailPath": "assets/images/uranus.jpg",
+    "path": "objects/uranus.json"
+  },
+  {
+    "id": "neptune",
+    "title": "Neptune Shadows",
+    "type": "planet",
+    "thumbnailPath": "assets/images/neptune.jpg",
+    "path": "objects/neptune.json"
+  },
+  {
+    "id": "pluto",
+    "title": "New Horizons Sees Pluto",
+    "type": "planet",
+    "thumbnailPath": "assets/images/pluto.jpg",
+    "path": "objects/pluto.json"
+  },
+  {
+    "id": "sun",
+    "title": " Image of Sun From NASA's Solar Dynamics Observatory",
+    "type": "star",
+    "thumbnailPath": "assets/images/sun.jpg",
+    "path": "objects/sun.json"
+  },
+  {
+    "id": "sirius",
+    "title": "Artemis I First Rollout",
+    "type": "star",
+    "thumbnailPath": "assets/images/sirius.jpg",
+    "path": "objects/sirius.json"
+  },
+  {
+    "id": "betelgeuse",
+    "title": "Betelgeuse Enigmatic Environment",
+    "type": "star",
+    "thumbnailPath": "assets/images/betelgeuse.jpg",
+    "path": "objects/betelgeuse.json"
+  },
+  {
+    "id": "rigel",
+    "title": "Cassini: the Profiler",
+    "type": "star",
+    "thumbnailPath": "assets/images/rigel.jpg",
+    "path": "objects/rigel.json"
+  },
+  {
+    "id": "vega",
+    "title": "Rocky Ring of Debris Around Vega Artist Concept",
+    "type": "star",
+    "thumbnailPath": "assets/images/vega.jpg",
+    "path": "objects/vega.json"
+  },
+  {
+    "id": "alpha-centauri",
+    "title": "Hubble's Best Image of Alpha Centauri A and B",
+    "type": "star",
+    "thumbnailPath": "assets/images/alpha-centauri.jpg",
+    "path": "objects/alpha-centauri.json"
+  },
+  {
+    "id": "andromeda",
+    "title": "Andromeda Galaxy",
+    "type": "galaxy",
+    "thumbnailPath": "assets/images/andromeda.jpg",
+    "path": "objects/andromeda.json"
+  },
+  {
+    "id": "milky-way",
+    "title": "Tracing the growth of Milky Way-like galaxies",
+    "type": "galaxy",
+    "thumbnailPath": "assets/images/milky-way.jpg",
+    "path": "objects/milky-way.json"
+  },
+  {
+    "id": "orion-nebula",
+    "title": "Orion Nebula and Bow Shock",
+    "type": "nebula",
+    "thumbnailPath": "assets/images/orion-nebula.jpg",
+    "path": "objects/orion-nebula.json"
+  },
+  {
+    "id": "crab-nebula",
+    "title": "Most Detailed Image of the Crab Nebula",
+    "type": "nebula",
+    "thumbnailPath": "assets/images/crab-nebula.jpg",
+    "path": "objects/crab-nebula.json"
+  },
+  {
+    "id": "pillars-of-creation",
+    "title": "Pillars of Creation Revealed in 3-D",
+    "type": "nebula",
+    "thumbnailPath": "assets/images/pillars-of-creation.jpg",
+    "path": "objects/pillars-of-creation.json"
+  },
+  {
+    "id": "black-hole-m87",
+    "title": "Spitzer Captures Messier 87",
+    "type": "other",
+    "thumbnailPath": "assets/images/black-hole-m87.jpg",
+    "path": "objects/black-hole-m87.json"
+  }
+]

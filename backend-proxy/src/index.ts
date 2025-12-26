@@ -2,8 +2,22 @@
 export interface Env {
     NASA_API_KEY: string;
     NASA_IMAGE_API_URL: string;
+    ASTRO_CACHE: KVNamespace; // KV binding for caching
 }
 
+// APOD response from NASA API
+interface NasaApodResponse {
+    date: string;
+    title: string;
+    explanation: string;
+    url: string;
+    hdurl?: string;
+    media_type: 'image' | 'video';
+    thumbnail_url?: string;
+    copyright?: string;
+}
+
+// Our normalized app schema
 interface AstroObject {
     id: string;
     title: string;
@@ -13,9 +27,21 @@ interface AstroObject {
     metadata: {
         distance: string;
         constellation: string;
+        copyright?: string;
+        date?: string;
+        mediaType?: string;
     };
     source: 'NASA';
 }
+
+// Fallback image when APOD is a video without thumbnail
+const FALLBACK_APOD_IMAGE = 'https://apod.nasa.gov/apod/image/2312/SpaceTree_Gualandi_2000.jpg';
+
+// KV cache key for today's APOD
+const APOD_CACHE_KEY = 'apod_today';
+
+// TTL for APOD cache: 24 hours in seconds
+const APOD_CACHE_TTL = 86400;
 
 export default {
     async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
@@ -34,7 +60,7 @@ export default {
 
         try {
             if (url.pathname === '/apod') {
-                return await handleApod(request, env, ctx, url.origin, corsHeaders);
+                return await handleApod(env, url.origin, corsHeaders);
             } else if (url.pathname === '/lookup') {
                 return await handleLookup(request, env, ctx, url.origin, corsHeaders);
             } else if (url.pathname === '/image-proxy') {
@@ -51,64 +77,96 @@ export default {
     },
 };
 
-async function handleApod(request: Request, env: Env, ctx: ExecutionContext, origin: string, corsHeaders: any): Promise<Response> {
-    const cacheUrl = new URL(request.url);
-    const cacheKey = new Request(cacheUrl.toString(), request);
-    const cache = caches.default;
+/**
+ * Handle GET /apod - Returns Astronomy Picture of the Day
+ * Uses KV storage for caching with 24-hour TTL
+ * 
+ * Cache hit: ~10ms response time
+ * Cache miss: Fetches from NASA API, normalizes, stores in KV
+ */
+async function handleApod(env: Env, origin: string, corsHeaders: Record<string, string>): Promise<Response> {
+    // Step 1: Check KV cache first (fast path ~10ms)
+    const cachedData = await env.ASTRO_CACHE.get(APOD_CACHE_KEY);
 
-    // Try to find in cache first
-    let response = await cache.match(cacheKey);
-    if (response) {
-        return response;
-    }
-
-    try {
-        const nasaRes = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${env.NASA_API_KEY}`);
-        if (!nasaRes.ok) throw new Error(`NASA API error: ${nasaRes.statusText}`);
-
-        const data: any = await nasaRes.json();
-
-        const astroObject: AstroObject = {
-            id: data.date,
-            title: data.title,
-            description: data.explanation,
-            imageUrl: `${origin}/image-proxy?url=${encodeURIComponent(data.hdurl || data.url)}`,
-            type: 'other', // APOD can be anything, default to other or infer? 'type' field in schema restricted to specific values, but let's stick to contract
-            metadata: {
-                distance: 'Unknown',
-                constellation: 'Unknown'
-            },
-            source: 'NASA'
-        };
-
-        // If media_type is video, we might need special handling, but contract says imageUrl. 
-        // For now, if video, we might use thumbnail if available or fallback. 
-        // NASA APOD 'url' is sometimes youtube.
-        if (data.media_type === 'video') {
-            // Basic fallback for video, though schema expects imageUrl. 
-            // In a real app we'd get a thumbnail.
-            astroObject.imageUrl = `${origin}/image-proxy?url=${encodeURIComponent(data.thumbnail_url || data.url)}`;
-        }
-
-        response = new Response(JSON.stringify(astroObject), {
+    if (cachedData) {
+        // Cache hit! Return immediately
+        return new Response(cachedData, {
             headers: {
                 ...corsHeaders,
                 'Content-Type': 'application/json',
-                'Cache-Control': 'public, max-age=43200' // 12 hours
+                'X-Cache': 'HIT',
+                'Cache-Control': 'public, max-age=3600' // Browser can cache for 1 hour
             }
         });
-
-        ctx.waitUntil(cache.put(cacheKey, response.clone()));
-        return response;
-
-    } catch (e) {
-        // Error handling: serve stale if possible? 
-        // With Cache API match() at top, we already checked cache. 
-        // If we are here, cache miss AND fetch failed.
-        // If we had a Stale-While-Revalidate pattern or KV backup, we could do more.
-        // Given constraints, we return error if both fail.
-        throw e;
     }
+
+    // Step 2: Cache miss - Fetch from NASA API
+    const nasaRes = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${env.NASA_API_KEY}`);
+
+    if (!nasaRes.ok) {
+        throw new Error(`NASA API error: ${nasaRes.status} ${nasaRes.statusText}`);
+    }
+
+    const data: NasaApodResponse = await nasaRes.json();
+
+    // Step 3: Normalize to our app's schema
+    const astroObject = normalizeApodToAstroObject(data, origin);
+
+    // Step 4: Serialize and store in KV with 24-hour TTL
+    const jsonString = JSON.stringify(astroObject);
+
+    // Non-blocking write to KV (don't await, let it complete in background)
+    await env.ASTRO_CACHE.put(APOD_CACHE_KEY, jsonString, {
+        expirationTtl: APOD_CACHE_TTL
+    });
+
+    // Step 5: Return the response
+    return new Response(jsonString, {
+        headers: {
+            ...corsHeaders,
+            'Content-Type': 'application/json',
+            'X-Cache': 'MISS',
+            'Cache-Control': 'public, max-age=3600'
+        }
+    });
+}
+
+/**
+ * Normalize NASA APOD response to our app's AstroObject schema
+ * Handles video case by using thumbnail or fallback image
+ */
+function normalizeApodToAstroObject(data: NasaApodResponse, origin: string): AstroObject {
+    let imageUrl: string;
+
+    if (data.media_type === 'video') {
+        // Video case: Use thumbnail if available, otherwise use fallback
+        if (data.thumbnail_url) {
+            imageUrl = `${origin}/image-proxy?url=${encodeURIComponent(data.thumbnail_url)}`;
+        } else {
+            // No thumbnail available - use fallback image
+            imageUrl = `${origin}/image-proxy?url=${encodeURIComponent(FALLBACK_APOD_IMAGE)}`;
+        }
+    } else {
+        // Image case: Prefer HD URL, fallback to regular URL
+        const sourceUrl = data.hdurl || data.url;
+        imageUrl = `${origin}/image-proxy?url=${encodeURIComponent(sourceUrl)}`;
+    }
+
+    return {
+        id: data.date,
+        title: data.title,
+        description: data.explanation,
+        imageUrl,
+        type: 'other', // APOD can be various types, default to 'other'
+        metadata: {
+            distance: 'Unknown',
+            constellation: 'Unknown',
+            copyright: data.copyright || 'Public Domain',
+            date: data.date,
+            mediaType: data.media_type
+        },
+        source: 'NASA'
+    };
 }
 
 async function handleLookup(request: Request, env: Env, ctx: ExecutionContext, origin: string, corsHeaders: any): Promise<Response> {

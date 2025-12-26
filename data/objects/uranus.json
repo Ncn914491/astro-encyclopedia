@@ -1,0 +1,20 @@
+{
+  "id": "uranus",
+  "title": "Hubble Observes the Planet Uranus",
+  "description": "This NASA Hubble Space Telescope image of the planet Uranus reveals the planet rings and bright clouds and a high altitude haze above the planet south pole.",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA01282%2FPIA01282~medium.jpg",
+  "localImagePath": "assets/images/uranus.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA01282",
+    "dateCreated": "1998-08-02T11:09:39Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Uranus",
+    "Hubble Space Telescope"
+  ]
+}

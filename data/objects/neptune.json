@@ -1,0 +1,20 @@
+{
+  "id": "neptune",
+  "title": "Neptune Shadows",
+  "description": "This image of Neptune shows the discovery of shadows in Neptune atmosphere, shadows cast onto a deep cloud band by small elevated clouds. They are the first cloud shadows ever seen by NASA Voyager on any planet.",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA02220%2FPIA02220~medium.jpg",
+  "localImagePath": "assets/images/neptune.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA02220",
+    "dateCreated": "1999-10-15T15:00:04Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Neptune",
+    "Voyager"
+  ]
+}

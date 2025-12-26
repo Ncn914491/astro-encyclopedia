@@ -1,0 +1,20 @@
+{
+  "id": "alpha-centauri",
+  "title": "Hubble's Best Image of Alpha Centauri A and B",
+  "description": "The closest star system to the Earth is the famous Alpha Centauri group. Located in the constellation of Centaurus (The Centaur), at a distance of 4.3 light-years, this system is made up of the binary formed by the stars Alpha Centauri A and Alpha Centauri B, plus the faint red dwarf Alpha Centauri C, also known as Proxima Centauri.  This NASA/ESA Hubble Space Telescope has given us this stunning view of the bright Alpha Centauri A (on the left) and Alpha Centauri B (on the right), shining li...",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FGSFC_20171208_Archive_e000214%2FGSFC_20171208_Archive_e000214~medium.jpg",
+  "localImagePath": "assets/images/alpha-centauri.jpg",
+  "type": "star",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "GSFC_20171208_Archive_e000214",
+    "dateCreated": "2017-12-08T00:00:00Z",
+    "center": "GSFC"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Hubble's Best Image of Alpha Centauri A and B",
+    "alphacentauri"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mars",
+  "title": "Mars Perseverance Rover (Gradient Illustration)",
+  "description": "An illustration of the planet Mars, highlighting NASA's Mars Perseverance rover mission.  https://photojournal.jpl.nasa.gov/catalog/PIA24348",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA24348%2FPIA24348~medium.jpg",
+  "localImagePath": "assets/images/mars.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA24348",
+    "dateCreated": "2020-12-21T00:00:00Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Mars 2020"
+  ]
+}

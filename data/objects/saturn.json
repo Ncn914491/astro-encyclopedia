@@ -1,0 +1,20 @@
+{
+  "id": "saturn",
+  "title": "Saturn Rings",
+  "description": "Saturn Rings",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA02241%2FPIA02241~medium.jpg",
+  "localImagePath": "assets/images/saturn.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA02241",
+    "dateCreated": "2000-02-07T23:34:01Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "S Rings",
+    "Voyager"
+  ]
+}

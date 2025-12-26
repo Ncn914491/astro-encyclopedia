@@ -1,0 +1,20 @@
+{
+  "id": "sun",
+  "title": " Image of Sun From NASA's Solar Dynamics Observatory",
+  "description": "      On Sept. 10, 2025, NASA's Solar Dynamics Observatory captured this image of the Sun.      SDO is managed by NASA's Goddard Space Flight Center, Greenbelt, Maryland, for NASA's Science Mission Directorate in Washington. Its Atmosphere Imaging Assembly was built by the Lockheed Martin Solar Astrophysics Laboratory in Palo Alto, California.  https://photojournal.jpl.nasa.gov/catalog/PIA26681",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA26681%2FPIA26681~medium.jpg",
+  "localImagePath": "assets/images/sun.jpg",
+  "type": "star",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA26681",
+    "dateCreated": "2025-09-15T00:00:00Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Solar Dynamics Observatory (SDO)",
+    "Sun"
+  ]
+}

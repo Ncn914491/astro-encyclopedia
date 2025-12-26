@@ -1,0 +1,20 @@
+{
+  "id": "rigel",
+  "title": "Cassini: the Profiler",
+  "description": "The Cassini spacecraft continues to profile the haze structure and opacity in Saturn upper atmosphere with images like this, which captures Rigel, a star in Orion whose brightness is well-known, as it passes behind the planet",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA08238%2FPIA08238~medium.jpg",
+  "localImagePath": "assets/images/rigel.jpg",
+  "type": "star",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA08238",
+    "dateCreated": "2006-08-08T12:50:05Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Saturn",
+    "Cassini-Huygens"
+  ]
+}

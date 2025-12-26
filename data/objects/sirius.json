@@ -1,0 +1,29 @@
+{
+  "id": "sirius",
+  "title": "Artemis I First Rollout",
+  "description": "In this 30 minute exposure, NASA’s Space Launch System (SLS) rocket with the Orion spacecraft aboard is seen atop a mobile launcher as it rolls out to Launch Complex 39B for the first time, Friday, March 18, 2022, at NASA’s Kennedy Space Center in Florida. Ahead of NASA’s Artemis I flight test, the fully stacked and integrated SLS rocket and Orion spacecraft will undergo a wet dress rehearsal at Launch Complex 39B to verify systems and practice countdown procedures for the first launch. Visib...",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FNHQ202203180015%2FNHQ202203180015~medium.jpg",
+  "localImagePath": "assets/images/sirius.jpg",
+  "type": "star",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "NHQ202203180015",
+    "dateCreated": "2022-03-18T00:00:00Z",
+    "center": "HQ"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Artemis",
+    "Artemis I",
+    "Artemis I Wet Dress Rehearsal",
+    "Cape Canaveral",
+    "Crawler-Transporter 2 (CT-2)",
+    "Exploration Ground Systems",
+    "Florida",
+    "Kennedy Space Center",
+    "Orion",
+    "Space Launch System (SLS)",
+    "Vehicle Assembly Building (VAB)"
+  ]
+}

@@ -2,6 +2,12 @@ name = "backend-proxy"
 main = "src/index.ts"
 compatibility_date = "2023-10-25"
 
+# KV Namespace binding for caching APOD and other data
+# Replace YOUR_KV_ID with the ID from: npx wrangler kv:namespace create "ASTRO_CACHE"
+kv_namespaces = [
+  { binding = "ASTRO_CACHE", id = "393dd162d7214fc98b49f727adc15394" }
+]
+
 [vars]
 NASA_API_KEY = "JpTSzNvJlxgum9TVYqR2O3zk03utfp2EryV92Z7x"
 NASA_IMAGE_API_URL = "https://images-api.nasa.gov"

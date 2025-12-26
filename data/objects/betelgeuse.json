@@ -1,0 +1,19 @@
+{
+  "id": "betelgeuse",
+  "title": "Betelgeuse Enigmatic Environment",
+  "description": "The red supergiant star Betelgeuse center is surrounded by a clumpy envelope of material in its immediate vicinity in this view from the Herschel Space Observatory.",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA16680%2FPIA16680~medium.jpg",
+  "localImagePath": "assets/images/betelgeuse.jpg",
+  "type": "star",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA16680",
+    "dateCreated": "2013-01-22T22:28:03Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Herschel Space Observatory"
+  ]
+}

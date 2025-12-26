@@ -1,0 +1,21 @@
+{
+  "id": "jupiter",
+  "title": "Launch Vehicles",
+  "description": "The launch of the Atlas-Centaur carrying the Pioneer G (11) spacecraft on April 5, 1973. The objects of this flight was to explore the planet Jupiter and its environment.",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2F9139575%2F9139575~medium.jpg",
+  "localImagePath": "assets/images/jupiter.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "9139575",
+    "dateCreated": "1973-04-15T00:00:00Z",
+    "center": "MSFC"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Atlas-Centaur",
+    "Pioneer G",
+    "planet Jupiter"
+  ]
+}

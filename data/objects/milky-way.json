@@ -1,0 +1,27 @@
+{
+  "id": "milky-way",
+  "title": "Tracing the growth of Milky Way-like galaxies",
+  "description": "This composite image shows examples of galaxies similar to our Milky Way at various stages of construction over a time span of 11 billion years.  The galaxies are arranged according to time. Those on the left reside nearby; those at far right existed when the cosmos was about 2 billion years old. The bluish glow from young stars dominates the color of the galaxies on the right. The galaxies at left are redder from the glow of older stellar populations.  Astronomers found the distant galaxies ...",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FGSFC_20171208_Archive_e001326%2FGSFC_20171208_Archive_e001326~medium.jpg",
+  "localImagePath": "assets/images/milky-way.jpg",
+  "type": "galaxy",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "GSFC_20171208_Archive_e001326",
+    "dateCreated": "2017-12-08T00:00:00Z",
+    "center": "GSFC"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Tracing the growth of Milky Way-like galaxies",
+    "space",
+    "nasa",
+    "galaxy",
+    "galaxies",
+    "starts",
+    "goddard",
+    "hubble",
+    "milkyway"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "black-hole-m87",
+  "title": "Spitzer Captures Messier 87",
+  "description": "This image from NASA's Spitzer Space Telescope shows the elliptical galaxy Messier 87 (M87), the home galaxy of the supermassive black hole recently imaged by the Event Horizon Telescope (EHT). Spitzer's infrared view shows a faint trace of a jet of material spewing to the right of the galaxy - a feature that was previously one key indicator that a supermassive black hole lived at the galaxy's center.  More prominent in the image is the shockwave created by that jet. The inset in the image be...",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA23122%2FPIA23122~medium.jpg",
+  "localImagePath": "assets/images/black-hole-m87.jpg",
+  "type": "other",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA23122",
+    "dateCreated": "2019-04-25T00:00:00Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Spitzer Space Telescope",
+    "Messier 87"
+  ]
+}

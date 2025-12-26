@@ -1,0 +1,19 @@
+{
+  "id": "vega",
+  "title": "Rocky Ring of Debris Around Vega Artist Concept",
+  "description": "This artist concept illustrates an asteroid belt around the bright star Vega. Evidence for this warm ring of debris was found using NASA Spitzer Space Telescope, and the European Space Agency Herschel Space Observatory.",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA16610%2FPIA16610~medium.jpg",
+  "localImagePath": "assets/images/vega.jpg",
+  "type": "star",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA16610",
+    "dateCreated": "2013-01-08T22:28:10Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Herschel Space Observatory,Spitzer Space Telescope"
+  ]
+}

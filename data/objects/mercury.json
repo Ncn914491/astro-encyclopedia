@@ -1,0 +1,20 @@
+{
+  "id": "mercury",
+  "title": "Long Scarps on Mercury Tell of the Planet Unique History",
+  "description": "Long Scarps on Mercury Tell of the Planet Unique History",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA13477%2FPIA13477~medium.jpg",
+  "localImagePath": "assets/images/mercury.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA13477",
+    "dateCreated": "2010-09-28T18:03:56Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Mercury",
+    "MESSENGER"
+  ]
+}

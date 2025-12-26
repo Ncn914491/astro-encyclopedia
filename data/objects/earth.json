@@ -1,0 +1,26 @@
+{
+  "id": "earth",
+  "title": "View of Skylab space station cluster in Earth orbit from CSM",
+  "description": "SL4-143-4707 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules (CSM) during the final fly-around by the CSM before returning home. The space station is contrasted against a cloud-covered Earth. Note the solar shield which was deployed by the second crew of Skylab and from which a micrometeoroid shield has been missing since the cluster was launched on May 14, 1973. The OWS solar panel on the left...",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2Fsl4-143-4707%2Fsl4-143-4707~medium.jpg",
+  "localImagePath": "assets/images/earth.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "sl4-143-4707",
+    "dateCreated": "1974-02-08T00:00:00Z",
+    "center": "JSC"
+  },
+  "source": "NASA",
+  "keywords": [
+    "EARTH (PLANET)",
+    "EARTH OBSERVATIONS (FROM SPACE)",
+    "ONBOARD ACTIVITIES",
+    "ORBITS",
+    "ORBITAL SPACE STATIONS",
+    "PHOTOGRAPHY",
+    "SKYLAB 4",
+    "SKYLAB PROGRAM"
+  ]
+}

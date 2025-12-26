@@ -1,0 +1,19 @@
+{
+  "id": "pillars-of-creation",
+  "title": "Pillars of Creation Revealed in 3-D",
+  "description": "This video clip shows a visualisation of the three-dimensional structure of the Pillars of Creation within the star formation region Messier 16 (also called the Eagle Nebula). It is based on new observations of the object using the MUSE instrument on ESO’s Very Large Telescope in Chile. The pillars actually consist of several distinct pieces on either side of the star cluster NGC 6611.  Credit: ESO/M. Kornmesser  Read more: <a href=\"http://www.nasa.gov/image-feature/goddard/pillars-of-creatio...",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FGSFC_20171208_Archive_e000732%2FGSFC_20171208_Archive_e000732~medium.jpg",
+  "localImagePath": "assets/images/pillars-of-creation.jpg",
+  "type": "nebula",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "GSFC_20171208_Archive_e000732",
+    "dateCreated": "2017-12-08T00:00:00Z",
+    "center": "GSFC"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Pillars of Creation Revealed in 3-D"
+  ]
+}

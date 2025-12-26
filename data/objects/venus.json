@@ -1,0 +1,20 @@
+{
+  "id": "venus",
+  "title": "Launch Vehicles",
+  "description": "The Atlas/Agena launch vehicle carrying The Mariner-V spacecraft on launch pad on June 14, 1967. The Marina V mission was to explore the planet Venus. ",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2F6757466%2F6757466~medium.jpg",
+  "localImagePath": "assets/images/venus.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "6757466",
+    "dateCreated": "1967-06-14T00:00:00Z",
+    "center": "MSFC"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Atlas/Agena",
+    "Mariner-V Planet Venus"
+  ]
+}

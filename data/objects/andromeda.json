@@ -1,0 +1,19 @@
+{
+  "id": "andromeda",
+  "title": "Andromeda Galaxy",
+  "description": "This image is from NASA Galaxy Evolution Explorer is an observation of the large galaxy in Andromeda, Messier 31. The Andromeda galaxy is the most massive in the local group of galaxies that includes our Milky Way.",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA04921%2FPIA04921~medium.jpg",
+  "localImagePath": "assets/images/andromeda.jpg",
+  "type": "galaxy",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA04921",
+    "dateCreated": "2003-12-10T22:41:32Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Galaxy Evolution Explorer GALEX"
+  ]
+}

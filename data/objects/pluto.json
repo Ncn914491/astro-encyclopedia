@@ -1,0 +1,20 @@
+{
+  "id": "pluto",
+  "title": "New Horizons Sees Pluto",
+  "description": "The Long Range Reconnaissance Imager on NASA New Horizons acquired images of the Pluto field three days apart in late September 2006, in order to see Pluto motion against a dense background of stars.",
+  "imageUrl": "https://backend-proxy.chaitanyanaidunarisetti.workers.dev/image-proxy?url=https%3A%2F%2Fimages-assets.nasa.gov%2Fimage%2FPIA09234%2FPIA09234~medium.jpg",
+  "localImagePath": "assets/images/pluto.jpg",
+  "type": "planet",
+  "metadata": {
+    "distance": "Unknown",
+    "constellation": "Unknown",
+    "nasaId": "PIA09234",
+    "dateCreated": "2007-04-02T23:50:04Z",
+    "center": "JPL"
+  },
+  "source": "NASA",
+  "keywords": [
+    "Pluto",
+    "New Horizons"
+  ]
+}
